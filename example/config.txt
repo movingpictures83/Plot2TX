@@ -1,0 +1,2 @@
+Prefix plugins/Plot2TX/example/
+Plugin Plot2TX inputfile parameters.plots.txt outputfile 2TX.pdf
