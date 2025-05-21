@@ -27,7 +27,7 @@ pdf(outputfile)
 # load the dataset in this package
 meta = read.csv(paste(pfix, parameters["meta", 2], sep="/"))
 dat = readRDS(paste(pfix, parameters["data", 2], sep="/"))
-
+write.csv(dat@quantData$rsem, paste(outputfile, "csv", sep="."))
 ## ----tx2----------------------------------------------------------------------
 plot2TX(dat,genes=meta$gene,ylim=c(0,0.6))
 }
